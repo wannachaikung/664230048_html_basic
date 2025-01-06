@@ -1,0 +1,44 @@
+header {
+  background-color: rgb(240, 143, 143);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 64px;
+}
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  gap: 24px;
+}
+.logo-name {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+.logo-menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.btn-1 {
+  background-color: blue;
+  color: wheat;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+}
+.btn-2 {
+  background-color: rgb(255, 255, 255);
+  color: rgb(64, 205, 248);
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid lightblue;
+}
+.btn {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
