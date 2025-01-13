@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+      table , th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 400px;
+        text-align: center;
+        
+      }
+      th{
+        background-color: rgb(248, 128, 128);
+      }
+      tr:nth-child(even){
+        background-color: rgba(160, 220, 255, 0.377);
+      }
+      tr:hover{
+        background-color: rgba(194, 194, 194, 0.692);
+      }
+    </style>
+</head>
+<body>
+  <h1>Basic Table</h1>
+  <h3>Student List</h3>
+  <!-- Start Code Here -->
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Class</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td>Turbo</td>
+      <td>66/46</td>
+      <td>B+</td>
+    </tr>
+    <tr>
+      <td>Wit</td>
+      <td>66/46</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>Pond</td>
+      <td>66/46</td>
+      <td>A</td>
+    </tr>
+  </table>
+  <!-- End Code Here -->
+
+  <hr>
+
+  <h1>Table with Colspan and Rowspan</h1>
+  <h3>Food Menu</h3>
+  <table border="1" cellpadding="10" cellspacing="1" style="text-align: center;" widht="500px">
+    <tr>
+      <th>Day</th>
+      <th>Breakfast</th>
+      <th>Lunch</th>
+      <th>Dinner</th>
+      </tr>
+    <tr>
+      <td>Monday</td>
+      <td>Toast</td>
+      <td>Pizza</td>
+      <td>Pasta</td>
+     </tr>
+  <!-- Start Code Here -->
+     <tr>
+      <td rowspan="2" bgcolor="lightblue">Tuseday</td>
+      <td>Pancakes</td>
+      <td rowspan="2" bgcolor="yellow">Sandwich</td>
+      <td>Soup</td>
+      </tr>
+    <tr>
+      <td>Omelette</td>
+      <td>Steak</td>
+     </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td colspan="4">Toast</td>
+      </tr>
+    <tr>
+      <td colspan="4" bgcolor="lightgreen">Special Dinner: Friday BBQ Night!</td>
+     </tr>
+  <!-- End Code Here -->
+  </table>
+  <hr>
+
+  <h1>Styled Table with CSS</h1>
+  <h3>Product List</h3>
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Category</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Laptop</td>
+      <td>Electronics</td>
+      <td>$999</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>Electronics</td>
+      <td>$599</td>
+    </tr>
+    <tr>
+      <td>Table</td>
+      <td>Furniture</td>
+      <td>$200</td>
+    </tr>
+  </table>
+  <hr>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>
