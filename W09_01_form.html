@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+</head>
+<body>
+    <h1>HTML From</h1>
+    <h3>Input Element</h3>
+    <p>An <span style="color: red;">input element</span> can be displayed in many ways, depending on the <span style="color: red;">type</span>  attribute. </p>
+    
+    <fieldset style="background-color: antiquewhite;">
+        <legend>Text Fill</legend>
+        <form action="" method="post">
+        <label for="Fn">First Name</label>
+        <input type="text" id="Fn" name="Fn" placeholder="ป้อนชื่อ" required>
+        <br><br>
+
+        <label for="Ln">Last Name</label>
+        <input type="text" id="Ln" name="Ln" placeholder="ป้อนนามสกุล">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" placeholder="ป้อนอีเมล">
+        <br><br>
+
+        <label for="age0">Age</label>
+        <input type="number" id="age0" name="age" min="0" max="10">
+        <br><br>
+
+        <label for="age1">Age Readonly</label>
+        <input type="number" id="age1" name="age" placeholder="" min="0" max="10"  value="8" readonly>
+        <br><br>
+
+        <label for="Pwd">Password</label>
+        <input type="Password" id="Pwd" name="Pwd" placeholder="ป้อนรหัส">
+        <br><br>
+
+        <label for="BD">Birth Day</label>
+        <input type="date" id="BD" name="BD" placeholder="ป้อนวันเกิด">
+        <br><br>
+
+        <label for="url">Website</label>
+        <input type="url" id="url" name="url" placeholder="https://www.example.com">
+        <br><br>
+        
+        <label for="address" >ที่อยู่</label><br>
+        <textarea name="address" id="address" cols="30" rows="5" placeholder="ป้อนที่อยู่"></textarea>
+        <br><br>
+
+        <label for="color">สี</label>
+        <input type="color" name="color" id="color"><br><br>
+
+        <label for="photo">เลือกรูป</label>
+        <input type="file" name="photo" id="photo">
+        <br><br>
+
+        <input type="submit" value="ยืนยัน">
+        <input type="reset" value="ยกเลิก">
+        
+        </form>
+    </fieldset>
+    <fieldset style="background-color: beige;">
+        <legend>Radio Button</legend>
+        <form action="" method="">
+        <label>Gender :</label>
+        <input type="radio" name="Gender" id="male" value="M">
+        <label for="male">ชาย</label>
+        <input type="radio" name="Gender" id="female" value="F">
+        <label for="female">หญิง</label>
+        <br><br>
+            
+        <input type="submit" value="ยืนยัน">
+        <input type="reset" value="ยกเลิก">
+    </form>
+    </fieldset>
+    
+    <fieldset style="background-color: azure;">
+        <legend>Checkbox</legend>
+        <form action="" method="">
+            <label >วิชาที่ชอบ</label>
+            <input type="checkbox" name="subject1" id="math" value="math">
+            <label for="math">คณิตศาสตร์</label>
+            <input type="checkbox" name="subject2" id="sci" value="sci">
+            <label for="sci">วิทยาศาสตร์</label>
+            <input type="checkbox" name="subject3" id="eng" value="eng">
+            <label for="eng">อังกฤษ</label>
+            <br><br>
+
+            <button type="submit">ตกลง</button>
+            <button type="reset">ยกเลิก</button>
+        </form>
+    </fieldset>
+    
+    <fieldset style="background-color: rgb(201, 249, 255);">
+        <legend>DropDown List [Selec...Option..]</legend>
+        <form>
+            <label for="Province">จังหวัด</label>
+            <select name="Province" id="Province">
+                <option value="bkk" >กรุงเทพมหานคร</option>
+                <option value="nakhon patom" >นครปฐม</option>
+                <option value="khonkaen" >ขอนแก่น</option>
+                <option value="chiangmai" >เชียงใหม่</option>
+            </select>
+            <br><br>
+            <button type="submit">ตกลง</button>
+            <button type="reset">ยกเลิก</button>
+        </form>
+    </fieldset>
+    <hr>
+<a href="index.html">Back to Home</a>
+</body>
+</html>
