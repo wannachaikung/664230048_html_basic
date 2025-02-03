@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mid term</title>
+   
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+        .header , h1{
+            text-align: center;
+            background-color: rgb(0, 136, 255);
+            padding: 20px;
+            margin: 0;
+            
+        }
+        .container{  
+            background-color: rgb(255, 255, 255);
+            width: 800px;
+            margin: auto;
+            padding: 15px;
+            flex: 1;
+        }
+        .img {
+            align-items: end
+        }
+        .text1 {
+            padding: 10px;
+            float: right;
+        }
+        .text-con{
+            text-align: center;
+            padding: 10px;
+        }
+        .text1-con{
+            text-align: left;
+            padding: 10px;
+            list-style-type: circle;
+        }
+        .table{
+            width: 100%;
+            border-radius: 10px;
+            background-color: rgb(15, 255, 135);
+        }
+        img{
+            width: 100%;
+            object-fit: fill;
+        }
+        button{
+            float: right;
+            padding: 10px;
+            border: none;
+            background-color: rgb(255, 178, 34);
+            border-radius: 10px;
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            box-shadow:0px 3px 5px rgb(0, 0, 0);
+        }
+        button:hover{
+            background: #f1b7ff;
+            
+        }
+        footer {
+        background-color: rgb(0, 191, 255);
+        padding: 10px;
+        text-align: center;
+        color: white;
+        }
+        th {
+        background-color: burlywood;
+        font-style: bold;
+        text-align: center;
+        }
+        .tablegrade{
+        border: 1px solid rgb(45, 129, 255);
+        width: 100%;
+        text-align: center;
+        height: 100px;
+        }
+        .ulcircle{
+        list-style-type: circle;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>รายงานผลเกรด...Mr Wannchai Chouegthong</h1>
+        <hr>
+    </header>
+    <div class="container">
+            <table class="table" >
+                <tr>
+                    <td style="text-align: right; max-width: 200px;">
+                        <img src="images/Npru-logo.png" alt="logobanner" width="150px" height="150px">
+                    </td>
+                    <td class="text1">
+                        <p>664230048 นายวรรณชัย เชื้อทอง 
+                            <br>หมู่เรียน:66/46 | อาจารย์ที่ปรึกษา: อ.แก้วใจ อาภรพิศาล
+                            <br> สาขา Link => <a href="https://pgm.npru.ac.th/it/">เทคโนโลยีสารสนเทศ</a> | คณะวิทยาศาสตร์และเทคโนโนโลยี</p>
+                            <button a href="https://pgm.npru.ac.th/it/" >More information</button>
+                    </td>
+                </tr>
+            </table>
+           
+            <div class="text-con">
+                <h3>ผลการเรียน</h3>
+            </div>
+            
+            <table class="tablegrade" border="1" cellpadding="10" cellspacing="1" style="text-align: center;" widht="400px">
+                <tr>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อวิชา</th>
+                    <th>เกรด</th>
+                </tr>
+                <tr>
+                    <td colspan="4">Total GPA:3.44</td>
+                    
+                </tr>
+                <tr>
+                    <td>   7202105	</td>
+                    <td style="text-align: left;">การประกันและความปลอดภัยด้านสารสนเทศ	</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>7201401</td>
+                    <td style="text-align: left;">โปรแกรมสำเร็จรูปมัลติมีเดีย	</td>
+                    <td>A</td>
+                </tr>
+            </table>
+            
+            <div class="text1-con">
+                <h3>หมายเหตุ</h3>
+                <ul class="ulcircle">
+                    <li>เกรดที่แสดงจะทำการคำนวณเกรดรายวิชา</li>
+                    <li>Transcript จะถือคำที่ได้คำนวณเก็บไว้</li>
+                </ul>
+                
+            </div>
+        </div>
+
+       <footer>
+        <p>
+            &copy Webmaster by Wannchai Chouegthong. IT 664230048
+            <br>Nakoh Pathom Rajabphat University
+        </p>
+       </footer>
+
+        
+</body>
+</html>
