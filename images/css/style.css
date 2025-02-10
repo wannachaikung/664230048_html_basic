@@ -1,0 +1,92 @@
+header {
+  background-color: lightblue;
+  margin-bottom: 20px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "kanit", sans-serif;
+  background-color: rgb(235, 235, 235);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 64px;
+}
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  gap: 24px;
+}
+.logo-name {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+.logo-menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.btn-1 {
+  background-color: blue;
+  color: wheat;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+}
+.btn-2 {
+  background-color: rgb(255, 255, 255);
+  color: rgb(64, 205, 248);
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid rgb(0, 189, 252);
+}
+.btn {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+footer {
+  background-color: rgb(88, 188, 255);
+  text-align: center;
+  height: 100px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0px;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(204, 0, 255);
+}
+.btn-1:hover {
+  text-decoration: none;
+  background-color: rgb(204, 0, 255);
+}
+.btn-2:hover {
+  text-decoration: none;
+  background-color: rgb(204, 0, 255);
+}
