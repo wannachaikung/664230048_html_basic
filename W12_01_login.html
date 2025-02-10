@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'K2D' ,sans-serif;
+            background: linear-gradient(90deg, rgb(39, 39, 182) 0%, rgb(92, 130, 255) 35%, rgb(30, 210, 255) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            background-color: azure;
+            width: 700px;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px black;
+            height: 400px;
+        }
+        .left-side{
+            background: url('images/blue-archive-anime.jpg');
+            background-size: cover;
+            background-position: center ;
+            background-blend-mode: darken ;   
+            background-color: rgba(39, 39, 39, 0.5);
+            color: rgb(255, 255, 255);  
+            
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            text-align: center;
+            text-transform: uppercase;
+            width: 60%;
+        }
+        .right-side{
+            padding: 40px;    
+            width: 40%;   
+            form {
+
+                label {
+                    display: block;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+                input {
+                    width: 100%;
+                    padding: 6px;
+                    box-sizing: border-box;
+                    margin-bottom: 10px ;
+                    border: 1px solid rgb(172, 172, 172);
+                }    
+                input[type="submit"] {
+                    background-color: rgb(0, 153, 255);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                    border-radius: 10px;
+                }
+                input[type="submit"]:hover{
+                    background-color: rgb(56, 41, 255);
+                }
+            }
+        }
+        a {
+           color: blue;
+           text-decoration: none; 
+        }
+        a:hover{
+            color: rgb(195, 43, 226);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2>information technology</h2>
+            <p>ยินดีต้อนรับเข้าสู่เว็บไซต์การเรียนวิชาการออกแบบและพัฒนาเว็บไซต์</p>
+        </div>
+        <div class="right-side">
+            <h2>Login</h2>
+            <form action="" method="">
+            <label>UserName</label>
+            <input type="text" id="UserName" name="UserName" placeholder="Enter your UserName" required>
+            
+            <label>Password</label>
+            <input type="password" id="Password" name="Password"placeholder="Enater your password" required>
+            <input type="submit" value="Login">
+        </form>
+            
+
+            <p>Forgot <a href="#">Passwod?</a></p>
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
