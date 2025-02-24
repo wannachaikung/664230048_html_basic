@@ -75,11 +75,12 @@ nav {
 }
 nav ul {
   display: flex;
-  justify-content: space-between;
+  align-self: center;
+  justify-content: center;
   list-style: none;
   gap: 15px;
   margin-left: 20px;
-  align-items: center;
+
   a {
     text-decoration: none;
     color: var(--primary-color);
@@ -156,49 +157,194 @@ nav ul {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-.customize{
+.customize {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.support{
+.support {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
-} 
-.pic-side{
-    width: 100%;
-    img{
-        width: 100%;
-      }
+  flex-direction: row-reverse;
 }
-  .text-side{
+.pic-side {
+  width: 50%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.pic-side2 {
+  width: 50%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.text-side {
+  margin-bottom: 24px;
+  h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
     margin-bottom: 24px;
-    h1{
-     color: var(--secondary-color);
-     font-size: 2.5rem;
-     margin-bottom: 24px;
-    }
-    p{
-     color: var(--text-color-normal);
-     font-size: 1.3rem;
-     margin: 24px 0 ;
-     width: 70%;
-    }
-} 
-  .text-side2{
+  }
+  p {
+    color: var(--text-color-normal);
+    font-size: 1.3rem;
+    margin: 24px 0;
+    width: 70%;
+  }
+}
+.text-side2 {
+  margin-bottom: 24px;
+  padding-left: 15px;
+  h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
     margin-bottom: 24px;
-    padding-left: 15px;
-    h1{
-     color: var(--secondary-color);
-     font-size: 2.5rem;
-     margin-bottom: 24px;
+  }
+  p {
+    color: var(--text-color-normal);
+    font-size: 1.3rem;
+    margin: 24px 0;
+    width: 70%;
+  }
+}
+footer {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+  color: var(--base-color-white);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-left {
+  h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+}
+.footer-right {
+  display: flex;
+  gap: 40px;
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 4px;
     }
-    p{
-     color: var(--text-color-normal);
-     font-size: 1.3rem;
-     margin: 24px 0 ;
-     width: 70%;
+    a {
+      color: var(--base-color-white);
+      text-decoration: none;
     }
-} 
+    a:hover {
+      color: var(--secondary-color);
+    }
+  }
+}
+.footer-item {
+  h4 {
+    margin-bottom: 24px;
+    font-size: 1.2rem;
+  }
+}
+.hamburger-icon {
+  display: none;
+}
+.full-screen-menu {
+  display: none;
+}
+/*Responsive for Mobile*/
+@media screen and (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  nav {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .solution-content {
+    flex-direction: column;
+    .item {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  .coustomize {
+    flex-direction: column;
+  }
+  .support {
+    flex-direction: column;
+  }
+  .discover-content {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .footer-left {
+    flex-direction: column;
+  }
+  .footer-right {
+    flex-direction: column;
+  }
+  .header-button {
+    display: none;
+  }
+  header {
+    padding: 10px 10px;
+  } /* เมนูเต็มจอ */
+  .full-screen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* พื้นหลังสีดำโปร่งแสง */
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    z-index: 999;
+  }
+
+  .full-screen-menu ul {
+    list-style: none;
+    padding-top: 50px;
+  }
+
+  .full-screen-menu ul li {
+    margin: 20px 0;
+  }
+
+  .full-screen-menu ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .full-screen-menu ul li a:hover {
+    color: var(--secondary-color);
+  }
+
+  /* ปุ่มปิดเมนู */
+  .close-btn {
+    font-size: 32px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+  }
+}
+/*Responsive for Tablet*/
