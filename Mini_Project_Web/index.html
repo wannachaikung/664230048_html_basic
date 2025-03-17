@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wannachai Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .highlight {
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <!-- เฮดเดอร์และ Navbar -->
+    <header class="header" id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow ">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <img src="https://i.pinimg.com/564x/a3/03/d2/a303d22c12bb9b117ddb3befdbb7b946.jpg" alt="" width="30"
+                        height="30" style="border-radius: 50%;">
+                    <a class="navbar-brand ms-2" href="#" style="font-weight: 500;">Wannachai</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Bootstrap Carousel -->
+        <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000" style="background-image: url('https://images8.alphacoders.com/133/thumb-1920-1335398.png')">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption">
+                        <h1>สวัสดีครับ ผม<span class="highlight"> นายวรรณชัย เชื้อทอง</span></h1>
+                        <p>นักศึกษาชั้นปีที่ 2 | การออกแบบและพัฒนาเว็บเบื้องต้น | 664230048</p>
+                        <a href="#about" class="btn btn-primary-custom">About me</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000" style="background-image: url('https://images5.alphacoders.com/135/thumb-1920-1351341.jpeg')">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption">
+                        <h1>ดูผลงานด้าน <span class="highlight">ดีไซน์ที่โดดเด่น</span></h1>
+                        <p>ผลงาน Mini Project</p>
+                        <a href="#portfolio" class="btn btn-primary-custom">Project</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000" style="background-image: url('https://images3.alphacoders.com/139/thumb-1920-1393546.jpg')">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption">
+                        <h1>สามารถติดตาม<span class="highlight"> ผลงาน</span></h1>
+                        <p>สามารถติดต่อ</p>
+                        <a href="#contact" class="btn btn-primary-custom">ติดต่อ</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- ส่วนเกี่ยวกับตัวเอง -->
+    <section class="section about" id="about">
+        <h2 class="section-title">About me </h2>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="/images/Picture_Oak.JPG" alt="โปรไฟล์">
+            </div>
+            <div class="about-text">
+                <h3>ยินดีต้อนรับสู่ portfolio ของผม</h3>
+                <p>สวัสดีครับ ผม นายวรรณชัย เชื้อทอง ผู้เริ่มต้นการเขียนโปรแกรมด้านการพัฒนาเว็บไซต์ที่มีประสบการณ์กว่าในการเรียนด้านนี้ 2 ปี ผมมีความหลงใหลในการสร้างเว็บไซต์ที่สวยงามและใช้งานง่าย</p>
+                <p>ผมมีความสามรถในการใช้ HTML, CSS, JavaScript  ความสามารถของผมไม่เพียงแค่การเขียนโค้ด แต่ยังรวมถึงการออกแบบ UX/UI และการทำงานร่วมกับทีมเพื่อพัฒนาโซลูชั่นดิจิทัลที่เหมาะสมกับความต้องการของลูกค้า</p>
+                <p>นอกจากเวลาเรียน ผมชอบพัฒนาตนเองโดยการดู YT ของผู้พัฒนาคนอื่นๆเพื่อมาเป็นบทเรียน และพร้อมเสมอที่จะเรียนรู้สิ่งใหม่ๆ ในวงการเทคโนโลยีที่เปลี่ยนแปลงอย่างรวดเร็ว</p>
+                <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">ติดต่อ</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ส่วนแสดงผลงาน -->
+    <section class="section portfolio" id="portfolio">
+        <h2 class="section-title">Project</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <a href="https://www.figma.com/proto/Egbl1Jam6Pve8g6PrxN1v2/Project?node-id=3-2&starting-point-node-id=3%3A2"><img src="/images/Figma_project.png" alt="ผลงาน 1"></a>
+                <div class="portfolio-item-info">
+                    <a href="https://www.figma.com/proto/Egbl1Jam6Pve8g6PrxN1v2/Project?node-id=3-2&starting-point-node-id=3%3A2">
+                        <h3>Figma</h3>
+                    </a>
+                    <p>เว็บไซต์ ดูอนิเมะ</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <a href="#"><img src="/images/Wannachai_Web.png" alt="ผลงาน 2"></a>
+                <div class="portfolio-item-info">
+                    <a href="#">
+                        <h3>Web Portfolio</h3>
+                    </a>
+                    <p>เกียวกับการออกแบบเว็ปของตนเอง</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFgS2XUdBpJNAbIy2Pk_rKzrZkBla0HnXEmw&s" alt="ผลงาน 3"></a>
+                <div class="portfolio-item-info">
+                    <a href="#">
+                        <h3>Traning AI</h3>
+                    </a>
+                    <p>อยู่ระหว่างการออกแบบ</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- ส่วนแสดงทักษะ -->
+    <section class="section skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-content">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="skill-title">Codeing</h3>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check-circle"></i> HTML </li>
+                    <li><i class="fas fa-check-circle"></i> CSS</li>
+                    <li><i class="fas fa-check-circle"></i> JavaScript</li>
+                    <li><i class="fas fa-check-circle"></i> Bootstrap</li>
+                    <li><i class="fas fa-check-circle"></i> MySQL</li>
+                    <li><i class="fas fa-check-circle"></i> PHP</li>
+                </ul>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3 class="skill-title">Design</h3>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check-circle"></i> Figma</li>
+                    <li><i class="fas fa-check-circle"></i> Canva</li>
+                    <li><i class="fas fa-check-circle"></i> UI/UX Design</li>
+                    <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                    <li><i class=""></i>-</li>
+                    <li><i class=""></i> -</li>
+                </ul>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3 class="skill-title">Tools</h3>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check-circle"></i> Git </li>
+                    <li><i class="fas fa-check-circle"></i> WordPress</li>
+                    <li><i class="fas fa-check-circle"></i> GitHub</li>
+                    <li><i class=""></i> -</li>
+                    <li><i class=""></i> -</li>
+                    <li><i class=""></i> -</li>
+                </ul>
+            </div>
+            
+            
+        </div>
+    </section>
+    
+   <!-- ส่วนติดต่อ  -->
+    <section class="section contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>ข้อมูลติดต่อ</h3>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> กาญจนบุรี, ประเทศไทย</p>
+                    <p><i class="fas fa-envelope"></i>wannachai200412@email.com</p>
+                    <p><i class="fas fa-phone"></i> 083 094 9216</p>
+                    <p><i class="fab fa-github"></i> wannachaikung</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/oak.wanachai?locale=th_TH"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/oak_wannachai/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/wannachai-chouegthong/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/wannachaikung"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ฟุตเตอร์ -->
+    <footer class="footer">
+        <p>&copy; copyright by Wannchai Chouegthong  <br>
+            Information Technology Program.
+            Science and Technology Faculty.<br>
+            Nakhon Pathom Rajabhat University</p>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+            var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+            navbarLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    if (navbarCollapse.classList.contains('show')) {
+                        new bootstrap.Collapse(navbarCollapse).toggle();
+                    }
+                });
+            });
+        });
+    </script>
