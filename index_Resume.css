@@ -163,6 +163,7 @@ a:hover {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
+    
 }
 
 .about-img img {
@@ -199,7 +200,7 @@ a:hover {
     max-width: 350px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.81);
     transition: transform 0.3s ease;
     text-align: center;
 }
@@ -262,7 +263,7 @@ a:hover {
     transition: transform 0.3s ease;
     text-align: center;
 }
-
+/* Hover card */
 .skill-card:hover {
     transform: translateY(-10px);
 }
